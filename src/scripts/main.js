@@ -14,9 +14,9 @@ const timer = setInterval(function() {
     const minute = 1000 * 60;
 
     const daysUntilEvent = Math.floor(eventRemaningTime / day);
-    const hoursUntilEvent = math.floor((eventRemaningTime % day) / hour);
-    const minutesUntilEvent = math.floor((eventRemaningTime % hour) / minute);
-    const secondsUntilEvent = math.floor((eventRemaningTime % minute) / 1000);
+    const hoursUntilEvent = Math.floor((eventRemaningTime % day) / hour);
+    const minutesUntilEvent = Math.floor((eventRemaningTime % hour) / minute);
+    const secondsUntilEvent = Math.floor((eventRemaningTime % minute) / 1000);
 
     document.getElementById('contador').innerHTML = `${daysUntilEvent}d ${hoursUntilEvent}h ${minutesUntilEvent}m ${secondsUntilEvent}`
 
