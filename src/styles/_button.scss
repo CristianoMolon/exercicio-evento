@@ -1,0 +1,19 @@
+@use 'variaveis';
+
+.button {
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: variaveis.$buttonColor;
+
+    &--preorder {
+        font-size: 26px;
+        padding: 8px 24px;
+
+        &:hover {
+            background-color: darken(variaveis.$buttonColor, 5%);
+        }
+    }
+}

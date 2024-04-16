@@ -1,0 +1,46 @@
+@use 'variaveis';
+
+.content {
+    padding: 80px;
+
+    &--lore {
+        background-image: linear-gradient(variaveis.$beige, variaveis.$darkYellow);
+    }
+
+    &--weapons {
+        background-image: linear-gradient(variaveis.$darkYellow, variaveis.$orange);
+    }
+
+    &--bosses {
+        background-image: linear-gradient(variaveis.$orange, variaveis.$red);
+    }
+
+    &--image-left {
+        .container {
+            flex-direction: row-reverse;
+            gap: 40px;
+        }
+    }
+
+    .container {
+        display: flex;
+    }
+
+    img {
+        width: 360px;
+    }
+
+    &__details {
+        margin-right: 40px;
+
+        &__title {
+            color: variaveis.$titleColor;
+            font-size: 36px;
+            margin-bottom: 16px;
+        }
+
+        &__desc {
+            line-height: 22px;
+        }
+    }
+}
